@@ -13,7 +13,9 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <NavBar />
-        {children}
+        <div className=" flex min-h-screen ">
+          {children}
+        </div>
       </body>
     </html>
   );

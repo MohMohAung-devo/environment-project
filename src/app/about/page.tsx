@@ -1,7 +1,7 @@
 import React from "react";
 
 export const page = () => {
-  return <div>Welcome about</div>;
+  return <div className="w-full bg-green-800">Welcome about</div>;
 };
 
 export default page;
