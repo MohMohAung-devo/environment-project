@@ -1,6 +1,7 @@
 import React from "react";
 import Photo from "../../../public/images (3).jpeg";
 import Image from "next/image";
+import { FaPagelines } from "react-icons/fa";
 export const page = () => {
   const dataList = [
     { id: 1, name: "Chauk", high: "46 C", region: "Magway", image: Photo },
@@ -19,7 +20,14 @@ export const page = () => {
   ];
   return (
     <div className="w-full h-screen relative">
-      <div className="w-4/5 h-[70vh] m-auto flex flex-col justify-center relative">
+      <div className="bg-green-900 absolute left-[-3rem] top-[-1rem] h-40 w-40 rounded-[50%]">
+        {" "}
+      </div>
+      <div>
+        {" "}
+        <FaPagelines size={30} color="red" style={{ marginTop: "3rem" }} />
+      </div>
+      <div className="w-4/5 h-[60vh] m-auto flex flex-col justify-center relative">
         <div className="flex justify-between ">
           <h1 className="text-2xl text-green-900">
             2024 Hottest temperautre in Myanmar
@@ -49,6 +57,10 @@ export const page = () => {
           ))}
         </div>
       </div>
+      <div
+        className="w-full h-[30vh] bg-green-900"
+        style={{ clipPath: "polygon(0% 80%, 90% 0%, 100% 70%, 0% 100%)" }}
+      ></div>
     </div>
   );
 };
