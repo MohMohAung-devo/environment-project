@@ -1,13 +1,16 @@
-import React from "react";
+"use client";
+
+import React, { useState } from "react";
 import Link from "next/link";
 import Photo from "../../public/careWorld.png";
 import Image from "next/image";
 const NavBar = () => {
+  const [activeColor, setActiveColor] = useState("");
   const menuList = [
     { id: 1, name: "Home", link: "/" },
     { id: 2, name: "About", link: "/about" },
     { id: 3, name: "Education", link: "/education" },
-    { id: 4, name: "Blog", link: "/blog" },
+    // { id: 4, name: "Blog", link: "/blog" },
   ];
   return (
     <div className="flex w-full h-[8vh] bg-white font-sans">
