@@ -1,15 +1,11 @@
 "use client";
-
-import React from "react";
 import Photo from "../../../public/images (3).jpeg";
 import Photo1 from "../../../public/manadlay.jpg";
 import Photo2 from "../../../public/monywa.jpg";
 import Photo3 from "../../../public/yangon.jpg";
 import Image from "next/image";
-import { FaPagelines } from "react-icons/fa";
 import { TbSunFilled } from "react-icons/tb";
 export const page = () => {
-
   const dataList = [
     {
       id: 1,
