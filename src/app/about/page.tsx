@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React from "react";
 import Photo from "../../../public/images (3).jpeg";
 import Photo1 from "../../../public/manadlay.jpg";
 import Photo2 from "../../../public/monywa.jpg";
@@ -9,7 +9,7 @@ import Image from "next/image";
 import { FaPagelines } from "react-icons/fa";
 import { TbSunFilled } from "react-icons/tb";
 export const page = () => {
-  const [colorState, setColorState] = useState("");
+
   const dataList = [
     {
       id: 1,
